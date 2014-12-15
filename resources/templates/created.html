@@ -1,0 +1,9 @@
+{% extends "templates/base.html" %}
+{% block content %}
+  <p>You created a duck!</p>
+
+{% if params %}
+<p class="error">{{params}}</p>
+{% params %}
+
+{% endblock %}

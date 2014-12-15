@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>duckiehunt.com</title>
+  <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+  <meta name="author" content="fullahead.org" />
+  <meta name="keywords" content="Open Web Design, OWD, Free Web Template, Lazy Days, Fullahead" />
+  <meta name="description" content="Webtracking for the coolest ducks on the planet." />
+  <meta name="robots" content="index, follow, noarchive" />
+  <meta name="googlebot" content="noarchive" />
+  <link rel="icon" type="image/png" href="/images/icons/duck-32x32.png" />
+  <link href="/css/html.css" media="screen, projection, tv " rel="stylesheet" type="text/css" />
+  <link href="/css/layout.css" media="screen, projection, tv " rel="stylesheet" type="text/css" />
+  <link href="/css/print.css" media="print " rel="stylesheet" type="text/css" />
+</head>
+  <body>
+<div id="content">
+
+  <div id="header">
+
+    <div id="title">
+      <h1>duckie hunt</h1>
+    </div>
+    <img src="/img/bg/balloons.gif"  alt="baloons"  class="balloons" />
+    <img src="/img/bg/header_left.jpg"  alt="baloons"  class="left" />
+    <img src="/img/bg/header_right.jpg"  alt="baloons"  class="right" />
+
+  </div>
+
+  <div id="mainMenu">
+    <ul class="floatRight">
+	    <li><a href='/' class="here">main</a></li>
+	    <li><a href='/stats'>stats</a></li>
+	    <li><a href='/view'>view</a></li>
+	    <li><a href='/mark'>mark</a></li>
+	    <li><a href='/faq'>faq</a></li>
+    </ul>
+  </div>
+
+  <div id="page">
+
+
+      {% block content %}
+      {% endblock %}
+    <!-- scripts and styles 
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    -->
+    <script src="//code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      var context = "{{servlet-context}}";
+    </script>
+    {% block page-scripts %}
+    {% endblock %}
+    </div>
+  </body>
+</html>
+
